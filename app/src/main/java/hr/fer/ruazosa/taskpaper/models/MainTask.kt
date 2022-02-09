@@ -1,8 +1,9 @@
 package hr.fer.ruazosa.taskpaper.models
 
+import java.io.Serializable
 import java.lang.StringBuilder
 
-class MainTask(var name:String,var subtasks:MutableList<SubTask>){
+class MainTask(var name:String,var subtasks:MutableList<SubTask>):Serializable{
 
     fun addSubTask(subtask:SubTask){
         subtasks.add(subtask)

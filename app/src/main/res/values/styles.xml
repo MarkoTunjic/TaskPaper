@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Button.Black" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">#3B3B3B</item>
+    </style>
+    <style name="Button.Green" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">#22BE1F</item>
+    </style>
+    <style name="Button.Red" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">#B51F1F</item>
+    </style>
+</resources>
+

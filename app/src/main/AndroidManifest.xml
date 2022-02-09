@@ -10,7 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TaskPaper">
         <activity
-            android:name=".MainActivity"
+            android:name=".TaskDetailsDropboxActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TaskDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DropboxLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DropboxHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

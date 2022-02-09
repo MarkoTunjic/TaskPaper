@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252525"
+    tools:context=".DropboxLoginActivity">
+
+    <Spinner
+        android:id="@+id/dropboxLoginDropdownButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/dropdown_shape"
+        android:backgroundTintMode="multiply"
+        android:paddingStart="100dp"
+        android:paddingEnd="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dropboxLoginHeaderText"
+        app:layout_constraintEnd_toStartOf="@+id/dropboxLoginSearchButton" />
+
+    <TextView
+        android:id="@+id/dropboxLoginHeaderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Tasks"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/dropboxLoginSearchButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#3B3B3B"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dropboxLoginHeaderText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <ImageView
+        android:id="@+id/dropboxLoginBackgroundImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dropbox" />
+
+    <Button
+        android:id="@+id/dropboxLoginLoginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="src_in"
+        android:hapticFeedbackEnabled="false"
+        android:text="LOGIN"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dropboxLoginBackgroundImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

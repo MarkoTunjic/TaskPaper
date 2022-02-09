@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">TaskPaper</string>
+    <string-array name="selection">
+        <item>Local</item>
+        <item>Dropbox</item>
+    </string-array>
 </resources>
