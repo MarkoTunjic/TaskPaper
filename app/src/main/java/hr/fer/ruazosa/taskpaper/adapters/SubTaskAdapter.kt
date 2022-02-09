@@ -42,7 +42,7 @@ class SubTaskAdapter(listOfSubTasksViewModel: SubTaskViewModel,var parentContext
             holder.subTaskName?.text = listOfSubTasks.subTasksList.value!![position].text
             val dp7=Utils.getPixelsFromDp(7,parentContext)
             val dp5=Utils.getPixelsFromDp(5,parentContext)
-            val dp8=Utils.getPixelsFromDp(8,parentContext)
+            val dp9=Utils.getPixelsFromDp(8,parentContext)
             if (listOfSubTasks.subTasksList.value!![position].completed){
                 holder.subTaskName?.paintFlags =
                     Paint.STRIKE_THRU_TEXT_FLAG or holder.subTaskName?.paintFlags!!
@@ -53,7 +53,7 @@ class SubTaskAdapter(listOfSubTasksViewModel: SubTaskViewModel,var parentContext
                 holder.subTaskName?.paintFlags=0
                 holder.firstButton?.setImageResource(R.drawable.tick)
                 holder.firstButton?.setBackgroundResource(R.drawable.green_rounded_corners)
-                holder.firstButton?.setPadding(dp5,dp8,dp5,dp8)
+                holder.firstButton?.setPadding(dp7,dp9,dp7,dp9)
             }
         }
     }
